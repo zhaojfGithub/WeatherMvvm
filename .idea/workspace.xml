@@ -26,7 +26,7 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -159,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616427745695</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="第一次提交">
+      <created>1616428074023</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616428074023</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,7 +180,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -190,10 +197,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1616427744726">
+    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1616428073097">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1616427744726" />
+    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1616428073097" />
     <state x="642" y="107" key="FileChooserDialogImpl" timestamp="1616427360331">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -202,14 +209,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="26" y="62" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616427173309" />
-    <state x="706" y="60" key="Vcs.Push.Dialog.v2" timestamp="1616427519894">
+    <state x="706" y="60" key="Vcs.Push.Dialog.v2" timestamp="1616428279912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="706" y="60" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616427519894" />
-    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616427561022">
+    <state x="706" y="60" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616428279912" />
+    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616428119083">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1616427561022" />
+    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1616428119083" />
     <state x="916" y="234" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1616427459689">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
