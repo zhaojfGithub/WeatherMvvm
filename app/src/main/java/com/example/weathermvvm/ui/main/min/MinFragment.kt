@@ -1,12 +1,6 @@
 package com.example.weathermvvm.ui.main.min
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.example.weathermvvm.R
-import com.example.weathermvvm.base.BaseFragment
 import com.example.weathermvvm.base.BaseVmFragment
 
 
