@@ -1,7 +1,7 @@
 package com.example.weathermvvm.network
 
 import com.example.weathermvvm.MyApplication
-import com.example.weathermvvm.chmmon.LogUtils
+import com.example.weathermvvm.common.LogUtils
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response

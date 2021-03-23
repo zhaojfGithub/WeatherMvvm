@@ -3,7 +3,7 @@ package com.example.weathermvvm.ui.main
 import androidx.lifecycle.MutableLiveData
 import com.example.weathermvvm.base.BaseViewModel
 import com.example.weathermvvm.bean.SiteBean
-import com.example.weathermvvm.chmmon.launch
+import com.example.weathermvvm.common.launch
 import com.example.weathermvvm.network.HttpConst
 
 class MainViewModel : BaseViewModel() {

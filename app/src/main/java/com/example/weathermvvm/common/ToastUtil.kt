@@ -1,4 +1,4 @@
-package com.example.weathermvvm.chmmon
+package com.example.weathermvvm.common
 
 import android.widget.Toast
 import com.example.weathermvvm.MyApplication

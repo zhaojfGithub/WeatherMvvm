@@ -9,4 +9,6 @@
     <string name="common_error_server_json">服务器错误:Json格式错误</string>
 
     <string name="loading">加载中</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

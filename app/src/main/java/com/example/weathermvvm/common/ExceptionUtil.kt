@@ -1,4 +1,4 @@
-package com.example.weathermvvm.chmmon
+package com.example.weathermvvm.common
 
 import android.accounts.NetworkErrorException
 import androidx.annotation.StringRes

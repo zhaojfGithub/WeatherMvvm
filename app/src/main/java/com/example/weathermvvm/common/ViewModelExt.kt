@@ -1,4 +1,4 @@
-package com.example.weathermvvm.chmmon
+package com.example.weathermvvm.common
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
