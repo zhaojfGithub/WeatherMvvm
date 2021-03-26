@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.lifecycle.Observer
 import com.example.weathermvvm.R
 import com.example.weathermvvm.base.BaseVmFragment
+import com.example.weathermvvm.ui.site.SiteListActivity
 import kotlinx.android.synthetic.main.fragment_facility.*
 import kotlinx.android.synthetic.main.fragment_weather.*
 import kotlinx.android.synthetic.main.life_index.*
@@ -43,7 +44,9 @@ class WeatherFragment : BaseVmFragment<WeatherViewModel>() {
             site=it.getString("site")
         }
         tv_title.text = site
-        iv_location.setOnClickListener {  }
+        iv_location.setOnClickListener {
+            startActivity(Intent(requireActivity(),SiteListActivity::class.java))
+        }
     }
 
     override fun lazyLoadData() {
@@ -89,6 +92,9 @@ class WeatherFragment : BaseVmFragment<WeatherViewModel>() {
                 ultravioletText.text = lifeIndex.ultraviolet[0].desc
                 carWashingText.text = lifeIndex.carWashing[0].desc
                 weatherLayout.visibility = View.VISIBLE
+            })
+            loadState.observe(this@WeatherFragment, Observer {
+                if (it) showDialog() else dismissProgress()
             })
         }
     }

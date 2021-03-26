@@ -13,7 +13,7 @@ object LoginStore {
 
     fun isLogin(): Boolean {
         val userId = getSpValue(userId, "")
-        return userId.isEmpty()
+        return userId.isNotEmpty()
     }
 
     fun getUserId(): Long {
