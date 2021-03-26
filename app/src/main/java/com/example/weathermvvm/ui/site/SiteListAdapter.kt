@@ -37,7 +37,9 @@ class SiteListAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     override fun getItemViewType(position: Int): Int {
-        return if (position == list.size) {
+        return if (!this::list.isInitialized){
+            ITEM_FOOTER
+        } else if (position == list.size) {
             ITEM_FOOTER
         } else {
             ITEM
@@ -53,7 +55,9 @@ class SiteListAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        if (list.size == 0) {
+        if (!this::list.isInitialized) {
+            return 1
+        }else if (list.size == 0){
             return 1
         }
         return list.size + 1
@@ -99,9 +103,14 @@ class SiteListAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     fun addAllList(list: ArrayList<AllSiteBean>) {
+        if (!this::list.isInitialized) {
+            this.list = ArrayList()
+        }
         this.list.clear()
         this.list.addAll(list)
     }
+
+
 
     fun removeList(option: Int) {
         list.removeAt(option)

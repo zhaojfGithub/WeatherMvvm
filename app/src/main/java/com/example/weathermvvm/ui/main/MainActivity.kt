@@ -53,9 +53,6 @@ class MainActivity : BaseVmActivity<MainViewModel>() {
         super.observe()
         mViewModel.run {
             data.observe(this@MainActivity, Observer { ToastUtil.showShort(it.query) })
-            loadState.observe(this@MainActivity, Observer {
-                if (it) showDialog() else dismissDialog()
-            })
         }
     }
 

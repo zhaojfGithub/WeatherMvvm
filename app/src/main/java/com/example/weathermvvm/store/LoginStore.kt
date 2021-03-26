@@ -25,8 +25,11 @@ object LoginStore {
     }
 
 
-    fun getSiteList(): ArrayList<AllSiteBean> {
+    fun getSiteList(): ArrayList<AllSiteBean>? {
         val list = getSpValue(siteList, "")
+        if (list.isEmpty()){
+            return null
+        }
         return gson.fromJson(list,object : TypeToken<List<AllSiteBean>>() {}.type)
     }
 

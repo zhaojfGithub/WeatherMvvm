@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.site.SiteListActivity"/>
+        <activity android:name=".ui.site.inquire.InquireSiteActivity"/>
     </application>
 
 </manifest>
