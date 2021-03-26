@@ -12,8 +12,7 @@ class MainViewModel : BaseViewModel() {
 
     fun getSiteList(site:String) = launch({
         loadState.value = true
-        HttpConst.IS_API = true
-        data.value = HttpConst.api.getSite(site)
+        data.value = HttpConst.apiColud.getSite(site)
         loadState.value = false
     },{
         loadState.value = false

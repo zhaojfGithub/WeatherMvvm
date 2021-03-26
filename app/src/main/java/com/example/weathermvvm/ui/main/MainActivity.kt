@@ -24,13 +24,13 @@ class MainActivity : BaseVmActivity<MainViewModel>() {
 
     override fun initView(savedInstanceState: Bundle?) {
         fragments = mapOf(
-            R.id.menu_home to createFragment(HomeFragment::class.java),
-            R.id.menu_facility to createFragment(FacilityFragment::class.java),
-            R.id.menu_mine to createFragment(MinFragment::class.java)
+                R.id.menu_home to createFragment(HomeFragment::class.java),
+                R.id.menu_facility to createFragment(FacilityFragment::class.java),
+                R.id.menu_mine to createFragment(MinFragment::class.java)
         )
         showFragment(0)
         bottom_nav.run {
-            setOnNavigationItemSelectedListener {  menuItem ->
+            setOnNavigationItemSelectedListener { menuItem ->
                 showFragment(menuItem.itemId)
                 true
             }
@@ -42,7 +42,7 @@ class MainActivity : BaseVmActivity<MainViewModel>() {
             }
         }
 
-        if (savedInstanceState == null){
+        if (savedInstanceState == null) {
             val initialItemId = R.id.menu_home
             bottom_nav.selectedItemId = initialItemId
             showFragment(initialItemId)
@@ -80,10 +80,14 @@ class MainActivity : BaseVmActivity<MainViewModel>() {
         supportFragmentManager.beginTransaction().apply {
             currentFragment?.let { if (it.isVisible) hide(it) }
             targetFragment?.let {
-                if (it.isAdded) show(it) else add(R.id.container,it)
+                if (it.isAdded) show(it) else add(R.id.container, it)
             }
         }.commit()
     }
 
+    override fun onDestroy() {
+        bottom_nav.clearAnimation()
+        super.onDestroy()
 
+    }
 }

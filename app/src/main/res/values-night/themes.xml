@@ -12,5 +12,6 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:networkSecurityConfig" tools:targetApi="n">@xml/network_security_config</item>
     </style>
 </resources>
