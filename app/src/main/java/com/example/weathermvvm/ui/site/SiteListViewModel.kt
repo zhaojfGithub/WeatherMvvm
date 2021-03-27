@@ -10,7 +10,7 @@ import com.example.weathermvvm.store.LoginStore
 
 class SiteListViewModel : BaseViewModel() {
 
-    val getList = MutableLiveData<ArrayList<AllSiteBean>>()
+    val getList = MutableLiveData<List<AllSiteBean>>()
     val setList = MutableLiveData<SignBean>()
 
     /**

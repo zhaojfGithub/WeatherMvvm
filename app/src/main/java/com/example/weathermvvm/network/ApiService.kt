@@ -11,7 +11,7 @@ interface ApiService {
     suspend fun getSite(@Query("query") query: String): SiteBean
 
     @GET("weatherSite/getAllSite")
-    suspend fun getAllSite(@Query("user_id") userId: Long): ApiResult<ArrayList<AllSiteBean>>
+    suspend fun getAllSite(@Query("user_id") userId: Long): ApiResult<List<AllSiteBean>>
 
     @GET("v2.5/${MyApplication.TOKEN}/{lng},{lat}/realtime.json")
     suspend fun getRealtimeWeather(@Path("lng") lng: String, @Path("lat") lat: String): RealTimeBean

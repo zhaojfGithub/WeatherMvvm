@@ -16,7 +16,7 @@ class WeatherViewPageAdapter(fragment: Fragment):FragmentStateAdapter(fragment){
         return WeatherFragment.newInstance(list[position].lat,list[position].lng,list[position].site)
     }
 
-    fun addAllFragment(list: ArrayList<AllSiteBean>){
+    fun addAllFragment(list: List<AllSiteBean>){
         this.list.clear()
         this.list.addAll(list)
     }

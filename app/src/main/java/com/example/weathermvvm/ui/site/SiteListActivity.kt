@@ -20,6 +20,7 @@ class SiteListActivity : BaseVmActivity<SiteListViewModel>() {
     override fun viewModelClass() = SiteListViewModel::class.java
 
     private lateinit var adapter: SiteListAdapter
+    private  var isAmend: Boolean = false
 
     override fun getLayoutId() = R.layout.activity_site_list
 
@@ -30,7 +31,9 @@ class SiteListActivity : BaseVmActivity<SiteListViewModel>() {
             setTitleTextColor(ContextCompat.getColor(this@SiteListActivity, R.color.white))
             setNavigationIcon(R.drawable.ic_back_64)
             setBackgroundColor(ContextCompat.getColor(this@SiteListActivity, R.color.blue))
-            setNavigationOnClickListener { this@SiteListActivity.finish() }
+            setNavigationOnClickListener {
+                setResult(Activity.RESULT_OK,intent)
+                this@SiteListActivity.finish() }
         }
         rvList.layoutManager = LinearLayoutManager(this)
         adapter = SiteListAdapter()
@@ -61,6 +64,7 @@ class SiteListActivity : BaseVmActivity<SiteListViewModel>() {
             })
             setList.observe(this@SiteListActivity, Observer {
                 mViewModel.getSiteList()
+                isAmend = true
                 ToastUtil.showShort(it.msg)
             })
         }
@@ -73,7 +77,7 @@ class SiteListActivity : BaseVmActivity<SiteListViewModel>() {
             val dialog = AlertDialog.Builder(this)
                     .setTitle("编辑地址")
                     .setMessage("长按item即可删除")
-                    .setPositiveButton("确定") { dialog1: DialogInterface, which: Int ->
+                    .setPositiveButton("确定") { dialog1: DialogInterface, _: Int ->
                         dialog1.dismiss()
                     }
             dialog.show()

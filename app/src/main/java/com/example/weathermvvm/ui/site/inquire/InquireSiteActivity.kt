@@ -42,6 +42,7 @@ class InquireSiteActivity : BaseVmActivity<InquireSiteViewModel>() {
         mViewModel.run {
             siteBean.observe(this@InquireSiteActivity, Observer {
                 adapter.addAllList(it)
+                adapter.notifyDataSetChanged()
             })
         }
     }

@@ -9,17 +9,23 @@ import com.example.weathermvvm.store.LoginStore
 
 class HomeViewModel : BaseViewModel() {
 
-    val allSiteBean = MutableLiveData<ArrayList<AllSiteBean>>()
+    val allSiteBean = MutableLiveData<List<AllSiteBean>>()
+    val isSite = MutableLiveData<Boolean>()
 
-    fun getSiteList()=launch({
+    fun getSiteList() = launch({
         loadState.value = true
-//        if (LoginStore.isLogin()){
-//            allSiteBean.value = LoginStore.getSiteList()
-//        }else
-            allSiteBean.value = HttpConst.apiLocahost.getAllSite(1371743970845048834).apiData()
-//        }
+        if (!LoginStore.isLogin()) {
+            if (LoginStore.getSiteList()==null){
+                isSite.value = true
+            }else{
+                isSite.value = false
+                allSiteBean.value =LoginStore.getSiteList()
+            }
+        } else {
+            allSiteBean.value = HttpConst.apiLocahost.getAllSite(LoginStore.getUserId()).apiData()
+        }
         loadState.value = false
-    },{
+    }, {
         loadState.value = false
     })
 }

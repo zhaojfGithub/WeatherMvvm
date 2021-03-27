@@ -102,7 +102,7 @@ class SiteListAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         val btSiteCompile: Button = itemView.findViewById(R.id.bt_site_compile)
     }
 
-    fun addAllList(list: ArrayList<AllSiteBean>) {
+    fun addAllList(list: List<AllSiteBean>) {
         if (!this::list.isInitialized) {
             this.list = ArrayList()
         }
