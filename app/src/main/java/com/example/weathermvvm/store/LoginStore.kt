@@ -12,8 +12,8 @@ object LoginStore {
     private val gson by lazy { Gson() }
 
     fun isLogin(): Boolean {
-        val userId = getSpValue(userId, "")
-        return userId.isNotEmpty()
+        val userId = getSpValue(userId, 0L)
+        return userId !=0L
     }
 
     fun getUserId(): Long {

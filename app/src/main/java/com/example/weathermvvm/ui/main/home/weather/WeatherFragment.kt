@@ -93,9 +93,6 @@ class WeatherFragment : BaseVmFragment<WeatherViewModel>() {
                 carWashingText.text = lifeIndex.carWashing[0].desc
                 weatherLayout.visibility = View.VISIBLE
             })
-            loadState.observe(this@WeatherFragment, Observer {
-                if (it) showDialog() else dismissProgress()
-            })
         }
     }
 }

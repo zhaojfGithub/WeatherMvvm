@@ -27,5 +27,17 @@ interface ApiService {
 
     @DELETE("weatherSite/removeSite")
     suspend fun deleteSiteWeather(@Query("user_id") userId: Long,
-                                  @Query("id") id: Long):SignBean
+                                  @Query("id") id: Long): SignBean
+
+    @GET("weatherFacility/getAllFacility")
+    suspend fun getAllFacility(@Query("id") userId: Long): ApiResult<List<FacilityBean>>
+
+    @POST("weatherUserFacility/addUserFacility")
+    suspend fun setUserFacility(@Query("user_id") userId: Long,
+                                @Query("facility_id") facility_id: Long): SignBean
+
+    @POST("weatherUserFacility/amendUserFacility")
+    suspend fun amendUserFacility(@Query("user_id") userId: Long,
+                                  @Query("facility_id") facility_id: Long,
+                                  @Query("collect") collect: Int): SignBean
 }

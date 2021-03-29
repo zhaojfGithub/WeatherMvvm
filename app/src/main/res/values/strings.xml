@@ -24,6 +24,7 @@
     <string name="light">实时紫外线</string>
     <string name="car_wash">洗车</string>
 
+    <string name="city">城市</string>
     <string name="addSite">添加城市</string>
     <string name="compileSite">编辑城市</string>
     <string name="input_site">请输入城市进行搜索</string>
