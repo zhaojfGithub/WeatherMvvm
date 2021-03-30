@@ -11,6 +11,8 @@ class HomeViewModel : BaseViewModel() {
 
     val allSiteBean = MutableLiveData<List<AllSiteBean>>()
     val isSite = MutableLiveData<Boolean>()
+    val loginData = MutableLiveData<Boolean>()
+    private var oneLogin: String = ""
 
     fun getSiteList() = launch({
         loadState.value = true
@@ -22,10 +24,17 @@ class HomeViewModel : BaseViewModel() {
                 allSiteBean.value =LoginStore.getSiteList()
             }
         } else {
-            allSiteBean.value = HttpConst.apiLocahost.getAllSite(LoginStore.getUserId()).apiData()
+            val userId = LoginStore.getUserId().toLong()
+            allSiteBean.value = HttpConst.apiLocahost.getAllSite(userId).apiData()
         }
         loadState.value = false
     }, {
         loadState.value = false
     })
+
+    fun loginData() {
+        if (LoginStore.isLogin() && oneLogin.isEmpty()) {
+            loginData.value = true
+        }
+    }
 }

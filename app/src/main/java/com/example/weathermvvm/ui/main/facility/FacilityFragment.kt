@@ -2,6 +2,7 @@ package com.example.weathermvvm.ui.main.facility
 
 
 import android.app.AlertDialog
+import android.content.Intent
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -10,6 +11,8 @@ import com.example.weathermvvm.R
 import com.example.weathermvvm.base.BaseVmFragment
 import com.example.weathermvvm.common.LogUtils
 import com.example.weathermvvm.common.ToastUtil
+import com.example.weathermvvm.ui.login.login.LoginActivity
+import com.example.weathermvvm.ui.login.register.RegisteredActivity
 import kotlinx.android.synthetic.main.activity_site_list.*
 import kotlinx.android.synthetic.main.activity_site_list.toolbar
 import kotlinx.android.synthetic.main.fragment_facility.*
@@ -41,7 +44,7 @@ class FacilityFragment : BaseVmFragment<FacilityViewModel>() {
         adapter = FacilityAdapter()
         rv_facility.layoutManager = LinearLayoutManager(activity)
         rv_facility.adapter = adapter
-        adapter.setOnItemClickListener(object : FacilityAdapter.OnItemClickListener{
+        adapter.setOnItemClickListener(object : FacilityAdapter.OnItemClickListener {
             override fun onClick(position: Int) {
                 mViewModel.setUserFacility(position);
             }
@@ -51,6 +54,11 @@ class FacilityFragment : BaseVmFragment<FacilityViewModel>() {
     override fun lazyLoadData() {
         super.lazyLoadData()
         mViewModel.getAllFacility()
+    }
+
+    override fun initLoginData() {
+        super.initLoginData()
+        mViewModel.loginData()
     }
 
     override fun observe() {
@@ -66,6 +74,9 @@ class FacilityFragment : BaseVmFragment<FacilityViewModel>() {
             isLogin.observe(this@FacilityFragment, Observer {
                 if (!it) loginDialog()
             })
+            loginData.observe(this@FacilityFragment, Observer {
+                if (it) mViewModel.getAllFacility()
+            })
         }
     }
 
@@ -73,8 +84,12 @@ class FacilityFragment : BaseVmFragment<FacilityViewModel>() {
         val dialog: AlertDialog.Builder = AlertDialog.Builder(activity)
                 .setTitle("登录")
                 .setMessage("只有进行登录才可以进行收藏！！！")
-                .setPositiveButton("确定") { dialog1, _ ->
+                .setPositiveButton("取消") { dialog1, _ ->
                     dialog1.dismiss()
+                }
+                .setPositiveButton("确定") { dialog2, _ ->
+                    startActivity(Intent(activity, LoginActivity::class.java))
+                    dialog2.dismiss()
                 }
         dialog.show()
     }

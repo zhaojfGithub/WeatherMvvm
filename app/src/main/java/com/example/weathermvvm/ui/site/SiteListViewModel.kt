@@ -21,7 +21,7 @@ class SiteListViewModel : BaseViewModel() {
     fun getSiteList() = launch({
         loadState.value = true
         if (LoginStore.isLogin()) {
-            val userId = LoginStore.getUserId()
+            val userId = LoginStore.getUserId().toLong()
             getList.value = HttpConst.apiLocahost.getAllSite(userId).apiData()
         } else {
             if (LoginStore.getSiteList() != null) {
@@ -36,7 +36,7 @@ class SiteListViewModel : BaseViewModel() {
     fun setSiteList(site: String, lat: String, lng: String) = launch({
         loadState.value = true
         if (LoginStore.isLogin()) {
-            val userId = LoginStore.getUserId()
+            val userId = LoginStore.getUserId().toLong()
             setList.value = HttpConst.apiLocahost.setSiteWeather(userId, site, lat, lng)
         } else {
             arrayList.clear()
@@ -64,7 +64,7 @@ class SiteListViewModel : BaseViewModel() {
             val signBean = SignBean(200, "删除成功")
             setList.value = signBean
         } else {
-            val userId = LoginStore.getUserId()
+            val userId = LoginStore.getUserId().toLong()
             setList.value = HttpConst.apiLocahost.deleteSiteWeather(userId, id)
         }
         loadState.value = false

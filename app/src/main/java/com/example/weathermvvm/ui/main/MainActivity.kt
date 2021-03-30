@@ -1,12 +1,15 @@
 package com.example.weathermvvm.ui.main
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import com.example.weathermvvm.R
 import com.example.weathermvvm.base.BaseVmActivity
+import com.example.weathermvvm.common.LogUtils
 import com.example.weathermvvm.common.ScrollToTop
 import com.example.weathermvvm.common.ToastUtil
+import com.example.weathermvvm.store.LoginStore
 import com.example.weathermvvm.ui.main.facility.FacilityFragment
 import com.example.weathermvvm.ui.main.home.HomeFragment
 import com.example.weathermvvm.ui.main.min.MinFragment
@@ -47,6 +50,11 @@ class MainActivity : BaseVmActivity<MainViewModel>() {
             bottom_nav.selectedItemId = initialItemId
             showFragment(initialItemId)
         }
+        LoginStore.setUserId("")
+        LogUtils.v(LoginStore.getSiteList().toString())
+
+        LogUtils.v(LoginStore.getUserId())
+        LogUtils.v(LoginStore.getSiteList().toString())
     }
 
     override fun observe() {

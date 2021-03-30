@@ -40,4 +40,18 @@ interface ApiService {
     suspend fun amendUserFacility(@Query("user_id") userId: Long,
                                   @Query("facility_id") facility_id: Long,
                                   @Query("collect") collect: Int): SignBean
+
+    /**
+     * 注册
+     */
+    @POST("weatherUser/register")
+    suspend fun registered(@Query("accountNumber") account: Long,
+                           @Query("password") password: String): SignBean
+
+    /**
+     * 登录
+     */
+    @POST("weatherUser/login")
+    suspend fun login(@Query("accountNumber") account: Long,
+                           @Query("password") password: String): ApiResult<List<UserBean>>
 }

@@ -1,6 +1,8 @@
 package com.example.weathermvvm.store
 
+import com.example.weathermvvm.MyApplication
 import com.example.weathermvvm.bean.AllSiteBean
+import com.example.weathermvvm.util.clearSpValue
 import com.example.weathermvvm.util.getSpValue
 import com.example.weathermvvm.util.putSpValue
 import com.google.gson.Gson
@@ -12,16 +14,12 @@ object LoginStore {
     private val gson by lazy { Gson() }
 
     fun isLogin(): Boolean {
-        val userId = getSpValue(userId, 0L)
-        return userId !=0L
+        val userId = getSpValue(userId, "")
+        return userId.isNotEmpty()
     }
 
-    fun getUserId(): Long {
-        val userId = getSpValue(userId, 0L)
-        if (userId != 0L) {
-            return userId
-        }
-        return 0L
+    fun getUserId(): String {
+        return getSpValue(this.userId, "")
     }
 
 
@@ -37,7 +35,12 @@ object LoginStore {
         putSpValue(siteList,gson.toJson(list))
     }
 
-    fun setUserId(userId: Long){
+    fun setUserId(userId: String){
         putSpValue(this.userId,userId)
+    }
+
+    fun clearUserInfo() {
+        clearSpValue(userId, MyApplication.context)
+        clearSpValue(siteList, MyApplication.context)
     }
 }

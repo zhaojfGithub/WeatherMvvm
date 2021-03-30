@@ -15,11 +15,14 @@ class FacilityViewModel : BaseViewModel() {
     val setFacility = MutableLiveData<SignBean>()
     val isLogin = MutableLiveData<Boolean>()
     var position: Int = 0
+    val loginData = MutableLiveData<Boolean>()
+    private var oneLogin: String = ""
 
     fun getAllFacility() = launch({
         loadState.value = true
+        oneLogin = LoginStore.getUserId()
         if (LoginStore.isLogin()) {
-            list.value = HttpConst.apiLocahost.getAllFacility(LoginStore.getUserId()).apiData()
+            list.value = HttpConst.apiLocahost.getAllFacility(oneLogin.toLong()).apiData()
         } else {
             list.value = HttpConst.apiLocahost.getAllFacility(-1L).apiData()
         }
@@ -32,14 +35,15 @@ class FacilityViewModel : BaseViewModel() {
         loadState.value = true
         if (LoginStore.isLogin()) {
             this@FacilityViewModel.position = position
+            val userId = LoginStore.getUserId().toLong()
             val facilityId = list.value!![position].facilityId
             val collect = list.value!![position].collect
             if (collect == null) {
                 setFacility.value = HttpConst.apiLocahost.setUserFacility(
-                        LoginStore.getUserId(), facilityId)
+                        userId, facilityId)
             } else {
                 setFacility.value = HttpConst.apiLocahost.amendUserFacility(
-                        LoginStore.getUserId(), facilityId, collect)
+                        userId, facilityId, collect)
             }
 
         } else {
@@ -49,4 +53,10 @@ class FacilityViewModel : BaseViewModel() {
     }, {
         loadState.value = false
     })
+
+    fun loginData() {
+        if (LoginStore.isLogin() && oneLogin.isEmpty()) {
+            loginData.value = true
+        }
+    }
 }

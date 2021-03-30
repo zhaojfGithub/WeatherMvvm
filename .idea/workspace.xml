@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="BranchesTreeState">
@@ -35,22 +36,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b538b14-ffd8-468f-b189-dc74d67da046" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/bean/FacilityBean.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/facility/FacilityAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_collect_no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_collect_yes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_facility.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/ficality_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/bean/UserBean.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/login/login/LoginActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/login/login/LoginViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/login/register/RegisteredActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/login/register/RegisteredViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_password_hide.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_password_show.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/blue_bg_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/base/BaseVmFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/base/BaseVmFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/base/BaseFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/base/BaseFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/base/BaseViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/base/BaseViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/network/ApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/network/ApiService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/store/LoginStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/store/LoginStore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/facility/FacilityFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/facility/FacilityFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/facility/FacilityViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/facility/FacilityViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/home/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/home/weather/WeatherFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/home/weather/WeatherFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_facility.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_facility.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/home/HomeViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/home/HomeViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/min/MinFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/min/MinFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/site/SiteListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/site/SiteListViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_bg_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_bg_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_min.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_min.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,17 +75,29 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="navigationResourceFile" />
-        <option value="Kotlin Object" />
         <option value="valueResourceFile" />
-        <option value="layoutResourceFile" />
         <option value="resourceFile" />
-        <option value="Kotlin Class" />
-        <option value="Kotlin File" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Kotlin Class" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
@@ -99,7 +122,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android-custom-viewD:/Android_Sdk/sources/android-30/android/view/View.java_SELECTED" value="View" />
     <property name="android-custom-viewD:/Android_Sdk/sources/android-30/android/widget/TextView.java_SELECTED" value="TextView" />
+    <property name="android-custom-viewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.2.0/13e8ff89631c2e101eb6bddd12c2fb4bbd74b15d/appcompat-1.2.0-sources.jar!/androidx/appcompat/widget/AppCompatEditText.java_SELECTED" value="AppCompatEditText" />
     <property name="android-custom-viewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.2.0/13e8ff89631c2e101eb6bddd12c2fb4bbd74b15d/appcompat-1.2.0-sources.jar!/androidx/appcompat/widget/AppCompatImageButton.java_SELECTED" value="AppCompatImageButton" />
+    <property name="android-custom-viewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.2.0/13e8ff89631c2e101eb6bddd12c2fb4bbd74b15d/appcompat-1.2.0-sources.jar!/androidx/appcompat/widget/AppCompatImageView.java_SELECTED" value="AppCompatImageView" />
     <property name="android-custom-viewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.2.0/13e8ff89631c2e101eb6bddd12c2fb4bbd74b15d/appcompat-1.2.0-sources.jar!/androidx/appcompat/widget/Toolbar.java_SELECTED" value="Toolbar" />
     <property name="android-custom-viewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.fragment/fragment/1.2.4/bfa66119813f2997ac526678b7ed354312c83fc/fragment-1.2.4-sources.jar!/androidx/fragment/app/FragmentContainerView.java_SELECTED" value="FragmentContainerView" />
     <property name="android-custom-viewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
@@ -107,10 +132,12 @@
     <property name="android-custom-viewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/com.google.android.material/material/1.1.0/7ba5bcd622e3d6d7ab6b9833717c4385e4ba0a51/material-1.1.0-sources.jar!/com/google/android/material/bottomnavigation/BottomNavigationView.java_SELECTED" value="BottomNavigationView" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../Android_Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="multi-representation-previewD:/Android_Sdk/sources/android-30/android/view/View.java_selected" value="Custom views" />
     <property name="multi-representation-previewD:/Android_Sdk/sources/android-30/android/widget/TextView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.2.0/13e8ff89631c2e101eb6bddd12c2fb4bbd74b15d/appcompat-1.2.0-sources.jar!/androidx/appcompat/widget/AppCompatEditText.java_selected" value="Custom views" />
     <property name="multi-representation-previewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.2.0/13e8ff89631c2e101eb6bddd12c2fb4bbd74b15d/appcompat-1.2.0-sources.jar!/androidx/appcompat/widget/AppCompatImageButton.java_selected" value="Custom views" />
+    <property name="multi-representation-previewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.2.0/13e8ff89631c2e101eb6bddd12c2fb4bbd74b15d/appcompat-1.2.0-sources.jar!/androidx/appcompat/widget/AppCompatImageView.java_selected" value="Custom views" />
     <property name="multi-representation-previewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.2.0/13e8ff89631c2e101eb6bddd12c2fb4bbd74b15d/appcompat-1.2.0-sources.jar!/androidx/appcompat/widget/Toolbar.java_selected" value="Custom views" />
     <property name="multi-representation-previewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.fragment/fragment/1.2.4/bfa66119813f2997ac526678b7ed354312c83fc/fragment-1.2.4-sources.jar!/androidx/fragment/app/FragmentContainerView.java_selected" value="Custom views" />
     <property name="multi-representation-previewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_selected" value="Custom views" />
@@ -119,8 +146,10 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateKotlinClassDialog.RecentsKey">
-      <recent name="com.example.weathermvvm.ui.main.home.weather" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\android_demo\WeatherMvvm\app\src\main\res\drawable" />
+      <recent name="D:\android_demo\WeatherMvvm\app\src\main\res\values-21" />
+      <recent name="D:\android_demo\WeatherMvvm\app\src\main\java\com\example\weathermvvm\bean" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.example.weathermvvm.ui.main.home.weather" />
@@ -128,8 +157,8 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\android_demo\WeatherMvvm\app\src\main\res\drawable-xxhdpi" />
-      <recent name="D:\android_demo\WeatherMvvm\app\src\main\res\layout" />
       <recent name="D:\android_demo\WeatherMvvm\app\src\main\res\drawable" />
+      <recent name="D:\android_demo\WeatherMvvm\app\src\main\res\layout" />
       <recent name="D:\android_demo\WeatherMvvm\app\src\main\res\xml-v21" />
       <recent name="D:\android_demo\WeatherMvvm\app\src\main\res\xml" />
     </key>
@@ -140,10 +169,8 @@
       <recent name="com.example.weathermvvm.ui.main.facility" />
       <recent name="com.example.weathermvvm.bean" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\android_demo\WeatherMvvm\app\src\main\res\drawable" />
-      <recent name="D:\android_demo\WeatherMvvm\app\src\main\res\values-21" />
-      <recent name="D:\android_demo\WeatherMvvm\app\src\main\java\com\example\weathermvvm\bean" />
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="com.example.weathermvvm.ui.main.home.weather" />
     </key>
   </component>
   <component name="RunManager">
@@ -307,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616815314797</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="设备页完成">
+      <created>1616996315372</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616996315372</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -343,85 +377,86 @@
     <MESSAGE value="添加城市完成" />
     <MESSAGE value="本地网络城市编辑完成" />
     <MESSAGE value="首页相关完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="首页相关完成" />
+    <MESSAGE value="设备页完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="设备页完成" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="913" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1616991405994">
+    <state x="913" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1617004476239">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="913" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1616991405994" />
-    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616991011517">
+    <state x="913" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1617004476239" />
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617027028654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1616991011517" />
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1617027028654" />
     <state x="492" y="187" width="554" height="450" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1616576236212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="492" y="187" width="554" height="450" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1616576236212" />
-    <state x="93" y="93" width="1350" height="638" key="AVDManager" timestamp="1616813466407">
+    <state x="93" y="93" width="1350" height="638" key="AVDManager" timestamp="1617004783095">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1616813466407" />
+    <state x="93" y="93" width="1350" height="638" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1617004783095" />
     <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog" timestamp="1616492772146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1616492772146" />
-    <state x="626" y="101" key="AndroidCreateResourceFileDialog" timestamp="1616753635279">
+    <state x="626" y="101" key="AndroidCreateResourceFileDialog" timestamp="1617004629565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="626" y="101" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1616753635279" />
-    <state x="600" y="196" key="AndroidCreateXmlResourceDialog" timestamp="1616755096178">
+    <state x="626" y="101" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1617004629565" />
+    <state x="600" y="196" key="AndroidCreateXmlResourceDialog" timestamp="1617008329666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="600" y="196" key="AndroidCreateXmlResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1616755096178" />
-    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1616815313446">
+    <state x="600" y="196" key="AndroidCreateXmlResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1617008329666" />
+    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1616996313855">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1616815313446" />
-    <state x="642" y="107" key="FileChooserDialogImpl" timestamp="1616852141143">
+    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1616996313855" />
+    <state x="642" y="107" key="FileChooserDialogImpl" timestamp="1617025752761">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="642" y="107" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1616852141143" />
-    <state width="1493" height="173" key="GridCell.Tab.0.bottom" timestamp="1616995989438">
+    <state x="642" y="107" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617025752761" />
+    <state width="1493" height="422" key="GridCell.Tab.0.bottom" timestamp="1617066774264">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616995989438" />
-    <state width="1493" height="173" key="GridCell.Tab.0.center" timestamp="1616995989438">
+    <state width="1493" height="422" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617066774264" />
+    <state width="1493" height="422" key="GridCell.Tab.0.center" timestamp="1617066774264">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616995989438" />
-    <state width="1493" height="173" key="GridCell.Tab.0.left" timestamp="1616995989435">
+    <state width="1493" height="422" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617066774264" />
+    <state width="1493" height="422" key="GridCell.Tab.0.left" timestamp="1617066774264">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616995989435" />
-    <state width="1493" height="173" key="GridCell.Tab.0.right" timestamp="1616995989438">
+    <state width="1493" height="422" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617066774264" />
+    <state width="1493" height="422" key="GridCell.Tab.0.right" timestamp="1617066774264">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616995989438" />
-    <state width="1493" height="228" key="GridCell.Tab.1.bottom" timestamp="1616991374676">
+    <state width="1493" height="422" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617066774264" />
+    <state width="1493" height="379" key="GridCell.Tab.1.bottom" timestamp="1617032189563">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="228" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616991374676" />
-    <state width="1493" height="228" key="GridCell.Tab.1.center" timestamp="1616991374676">
+    <state width="1493" height="379" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617032189563" />
+    <state width="1493" height="379" key="GridCell.Tab.1.center" timestamp="1617032189563">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="228" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1616991374676" />
-    <state width="1493" height="228" key="GridCell.Tab.1.left" timestamp="1616991374676">
+    <state width="1493" height="379" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1617032189563" />
+    <state width="1493" height="379" key="GridCell.Tab.1.left" timestamp="1617032189562">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="228" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1616991374676" />
-    <state width="1493" height="228" key="GridCell.Tab.1.right" timestamp="1616991374676">
+    <state width="1493" height="379" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1617032189562" />
+    <state width="1493" height="379" key="GridCell.Tab.1.right" timestamp="1617032189563">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="228" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1616991374676" />
+    <state width="1493" height="379" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1617032189563" />
     <state x="26" y="62" key="SettingsEditor" timestamp="1616427173309">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="26" y="62" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616427173309" />
-    <state x="706" y="60" key="Vcs.Push.Dialog.v2" timestamp="1616815348401">
+    <state x="706" y="60" key="Vcs.Push.Dialog.v2" timestamp="1616996342110">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="706" y="60" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616815348401" />
+    <state x="706" y="60" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616996342110" />
     <state x="565" y="189" key="chooseDestDirectoryDialog" timestamp="1616582195933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -430,6 +465,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1616430089943" />
+    <state x="330" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1617015114818">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="330" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1617015114818" />
     <state x="916" y="234" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1616427459689">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

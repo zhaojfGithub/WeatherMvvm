@@ -39,6 +39,7 @@ abstract class BaseFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+        initLoginData()
         if (!lazyLoaded){
             lazyLoadData()
             lazyLoaded = true
@@ -49,6 +50,8 @@ abstract class BaseFragment : Fragment() {
         super.onDestroy()
         dismissProgress()
     }
+
+    open fun initLoginData(){}
 
     open fun lazyLoadData(){}
 

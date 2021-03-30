@@ -8,10 +8,8 @@ import android.view.View
 import androidx.lifecycle.Observer
 import com.example.weathermvvm.R
 import com.example.weathermvvm.base.BaseVmFragment
-import com.example.weathermvvm.store.LoginStore
 import com.example.weathermvvm.ui.main.home.weather.WeatherViewPageAdapter
 import com.example.weathermvvm.ui.site.SiteListActivity
-import com.example.weathermvvm.ui.site.inquire.InquireSiteActivity
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
@@ -40,7 +38,6 @@ class HomeFragment : BaseVmFragment<HomeViewModel>() {
     override fun lazyLoadData() {
         super.lazyLoadData()
         mViewModel.getSiteList()
-        LoginStore.setUserId(1371743970845048834L)
     }
 
     override fun observe() {
@@ -54,6 +51,9 @@ class HomeFragment : BaseVmFragment<HomeViewModel>() {
                 if (it) {
                     addSiteDialog()
                 }
+            })
+            loginData.observe(this@HomeFragment, Observer {
+                if (it) mViewModel.getSiteList()
             })
         }
     }
