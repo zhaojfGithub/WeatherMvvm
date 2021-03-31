@@ -10,6 +10,7 @@ import com.example.weathermvvm.base.BaseActivity
 import com.example.weathermvvm.base.BaseVmFragment
 import com.example.weathermvvm.common.LiveBus
 import com.example.weathermvvm.common.USER_LOGIN
+import com.example.weathermvvm.common.USER_UPDATE
 import com.example.weathermvvm.ui.login.login.LoginActivity
 import com.example.weathermvvm.ui.main.home.HomeFragment
 import com.example.weathermvvm.ui.main.min.opinion.OpinionFeedbackActivity
@@ -45,7 +46,7 @@ class MinFragment : BaseVmFragment<MinViewModel>() {
     override fun lazyLoadData() {
         super.lazyLoadData()
         mViewModel.getUser()
-
+        mViewModel.Login()
     }
 
 
@@ -79,6 +80,12 @@ class MinFragment : BaseVmFragment<MinViewModel>() {
         }
         LiveBus.observe<Boolean>(USER_LOGIN, this) {
             if (it) {
+                mViewModel.getUser()
+                mViewModel.Login()
+            }
+        }
+        LiveBus.observe<Boolean>(USER_UPDATE,this){
+            if (it){
                 mViewModel.getUser()
                 mViewModel.Login()
             }

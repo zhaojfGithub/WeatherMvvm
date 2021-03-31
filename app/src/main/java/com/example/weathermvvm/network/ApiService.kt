@@ -60,4 +60,10 @@ interface ApiService {
      */
     @GET("weatherUser/user")
     suspend fun user(@Query("userId") userId: Long): ApiResult<UserBean>
+
+    /**
+     * 修改个人信息
+     */
+    @POST("weatherUser/updateUser")
+    suspend fun updateUser(@Body bean: UserBean): SignBean
 }

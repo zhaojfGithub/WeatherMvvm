@@ -3,5 +3,10 @@
     <string name="opinionFeedback">意见反馈</string>
     <string name="aboutMe">关于我们</string>
     <string name="comingSon">敬请期待</string>
+    <string name="number">账号:</string>
+    <string name="name">昵称:</string>
+    <string name="phone">1312312313</string>
+    <string name="email">邮箱:</string>
+    <string name="password">密码</string>
 
 </resources>
