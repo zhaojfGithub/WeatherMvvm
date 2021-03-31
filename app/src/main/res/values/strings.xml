@@ -32,5 +32,12 @@
     <string name="place_password">请输入密码</string>
     <string name="Login">登       录</string>
     <string name="place_register">去注册</string>
+    <string name="facilityCollect">设备收藏</string>
+    <string name="quitLogin">退出登录</string>
+    <string name="SiteRegulate">地址管理</string>
+    <string name="pushRegulate">推送管理</string>
+    <string name="opinionFeedback">意见反馈</string>
+    <string name="aboutMe">关于我们</string>
+    <string name="comingSon">敬请期待</string>
 
 </resources>

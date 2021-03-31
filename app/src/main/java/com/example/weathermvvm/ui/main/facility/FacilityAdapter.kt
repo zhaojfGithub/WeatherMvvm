@@ -48,7 +48,7 @@ class FacilityAdapter : RecyclerView.Adapter<FacilityAdapter.ViewHolder>() {
         } else {
             holder.ivCollect.setImageResource(R.drawable.ic_collect_yes)
         }
-        holder.itemView.setOnClickListener { listener?.onClick(position) }
+        holder.ivCollect.setOnClickListener { listener?.onClick(position) }
 
     }
 

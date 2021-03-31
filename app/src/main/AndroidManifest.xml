@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.weathermvvm">
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -7,12 +8,14 @@
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
+        android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
-        android:theme="@style/Theme.WeatherMvvm">
+        android:theme="@style/Theme.WeatherMvvm"
+        tools:targetApi="m">
         <activity android:name=".ui.main.MainActivity"
             android:launchMode="singleTask">
             <intent-filter>
@@ -25,6 +28,10 @@
         <activity android:name=".ui.site.inquire.InquireSiteActivity"/>
         <activity android:name=".ui.login.register.RegisteredActivity"/>
         <activity android:name=".ui.login.login.LoginActivity"/>
+        <activity android:name=".ui.main.min.collect.FacilityCollectActivity"/>
+        <activity android:name=".ui.main.min.opinion.OpinionFeedbackActivity"/>
+        <activity android:name=".ui.main.min.push.PushRegulateActivity"/>
+        <activity android:name=".ui.main.min.user.UserActivity"/>
     </application>
 
 </manifest>

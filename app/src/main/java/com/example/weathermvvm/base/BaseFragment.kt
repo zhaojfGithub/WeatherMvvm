@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
+import com.example.weathermvvm.common.LogUtils
 import com.example.weathermvvm.util.showProgress
 
 abstract class BaseFragment : Fragment() {
@@ -17,32 +18,38 @@ abstract class BaseFragment : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        mContext=context
+        mContext = context
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(getLayoutId(),container,false)
+        return inflater.inflate(getLayoutId(), container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initView()
         observe()
-        if (savedInstanceState == null){
+        if (savedInstanceState == null) {
             initData()
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+
+    }
+
     override fun onResume() {
         super.onResume()
-        initLoginData()
-        if (!lazyLoaded){
+        if (!lazyLoaded) {
             lazyLoadData()
             lazyLoaded = true
+        } else {
+            initLoginData()
         }
     }
 
@@ -51,15 +58,15 @@ abstract class BaseFragment : Fragment() {
         dismissProgress()
     }
 
-    open fun initLoginData(){}
+    open fun initLoginData() {}
 
-    open fun lazyLoadData(){}
+    open fun lazyLoadData() {}
 
-    open fun initData(){}
+    open fun initData() {}
 
-    open fun observe(){}
+    open fun observe() {}
 
-    open fun initView(){}
+    open fun initView() {}
 
     @LayoutRes
     protected abstract fun getLayoutId(): Int

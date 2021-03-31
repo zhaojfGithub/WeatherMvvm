@@ -50,11 +50,6 @@ class MainActivity : BaseVmActivity<MainViewModel>() {
             bottom_nav.selectedItemId = initialItemId
             showFragment(initialItemId)
         }
-        LoginStore.setUserId("")
-        LogUtils.v(LoginStore.getSiteList().toString())
-
-        LogUtils.v(LoginStore.getUserId())
-        LogUtils.v(LoginStore.getSiteList().toString())
     }
 
     override fun observe() {

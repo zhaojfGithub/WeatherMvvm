@@ -8,8 +8,12 @@ import android.view.View
 import androidx.lifecycle.Observer
 import com.example.weathermvvm.R
 import com.example.weathermvvm.base.BaseVmFragment
+import com.example.weathermvvm.common.LiveBus
+import com.example.weathermvvm.common.LogUtils
+import com.example.weathermvvm.common.USER_LOGIN
 import com.example.weathermvvm.ui.main.home.weather.WeatherViewPageAdapter
 import com.example.weathermvvm.ui.site.SiteListActivity
+import com.jeremyliao.liveeventbus.LiveEventBus
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
@@ -40,6 +44,7 @@ class HomeFragment : BaseVmFragment<HomeViewModel>() {
         mViewModel.getSiteList()
     }
 
+
     override fun observe() {
         super.observe()
         mViewModel.run {
@@ -56,6 +61,10 @@ class HomeFragment : BaseVmFragment<HomeViewModel>() {
                 if (it) mViewModel.getSiteList()
             })
         }
+        LiveBus.observe<Boolean>(USER_LOGIN,this){
+            if (it) mViewModel.getSiteList()
+        }
+
     }
 
     private fun addSiteDialog() {
@@ -63,17 +72,9 @@ class HomeFragment : BaseVmFragment<HomeViewModel>() {
                 .setTitle("添加地址")
                 .setMessage("您还有没有添加地址，是否现在去添加？")
                 .setPositiveButton("确定") { dialog1, _ ->
-                    startActivityForResult(Intent(activity, SiteListActivity::class.java),1)
+                    startActivityForResult(Intent(activity, SiteListActivity::class.java), 1)
                     dialog1.dismiss()
                 }
         dialog.show()
     }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == 1 && resultCode == Activity.RESULT_OK) {
-            mViewModel.getSiteList()
-        }
-    }
-
 }

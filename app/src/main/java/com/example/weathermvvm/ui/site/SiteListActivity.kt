@@ -10,7 +10,9 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.weathermvvm.R
 import com.example.weathermvvm.base.BaseVmActivity
+import com.example.weathermvvm.common.LiveBus
 import com.example.weathermvvm.common.ToastUtil
+import com.example.weathermvvm.common.USER_LOGIN
 import com.example.weathermvvm.ui.site.inquire.InquireSiteActivity
 import kotlinx.android.synthetic.main.activity_site_list.*
 
@@ -32,6 +34,7 @@ class SiteListActivity : BaseVmActivity<SiteListViewModel>() {
             setNavigationIcon(R.drawable.ic_back_64)
             setBackgroundColor(ContextCompat.getColor(this@SiteListActivity, R.color.blue))
             setNavigationOnClickListener {
+                LiveBus.post(USER_LOGIN,true)
                 setResult(Activity.RESULT_OK,intent)
                 this@SiteListActivity.finish() }
         }

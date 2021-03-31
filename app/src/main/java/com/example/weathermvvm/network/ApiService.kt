@@ -53,5 +53,11 @@ interface ApiService {
      */
     @POST("weatherUser/login")
     suspend fun login(@Query("accountNumber") account: Long,
-                           @Query("password") password: String): ApiResult<List<UserBean>>
+                      @Query("password") password: String): ApiResult<List<UserBean>>
+
+    /**
+     * 根据id查询个人信息
+     */
+    @GET("weatherUser/user")
+    suspend fun user(@Query("userId") userId: Long): ApiResult<UserBean>
 }

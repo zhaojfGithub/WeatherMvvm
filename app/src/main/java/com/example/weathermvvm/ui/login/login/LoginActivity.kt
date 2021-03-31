@@ -7,10 +7,13 @@ import android.view.View
 import androidx.lifecycle.Observer
 import com.example.weathermvvm.R
 import com.example.weathermvvm.base.BaseVmActivity
+import com.example.weathermvvm.common.LiveBus
 import com.example.weathermvvm.common.LogUtils
 import com.example.weathermvvm.common.ToastUtil
+import com.example.weathermvvm.common.USER_LOGIN
 import com.example.weathermvvm.ui.login.register.RegisteredActivity
 import com.example.weathermvvm.ui.main.MainActivity
+import com.jeremyliao.liveeventbus.LiveEventBus
 import kotlinx.android.synthetic.main.activity_register.*
 
 /**
@@ -54,6 +57,7 @@ class LoginActivity  : BaseVmActivity<LoginViewModel>() {
         }
         iv_login.setOnClickListener {
             startActivity(Intent(this,RegisteredActivity::class.java))
+            finish()
         }
     }
 
@@ -61,6 +65,7 @@ class LoginActivity  : BaseVmActivity<LoginViewModel>() {
         super.observe()
         mViewModel.apply {
             userBean.observe(this@LoginActivity, Observer {
+                LiveBus.post(USER_LOGIN,true)
                 ToastUtil.showShort("登录成功")
                 startActivity(Intent(this@LoginActivity,MainActivity::class.java))
                 finish()

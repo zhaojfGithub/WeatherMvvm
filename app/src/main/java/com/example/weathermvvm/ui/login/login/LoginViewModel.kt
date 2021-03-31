@@ -14,9 +14,10 @@ class LoginViewModel : BaseViewModel() {
     fun Login(account: String, password: String) = launch({
         loadState.value = true
         val list = HttpConst.apiLocahost.login(account.toLong(), password).apiData()
-        userBean.value = list[0]
         LoginStore.setUserId(list[0].id.toString())
+        userBean.value = list[0]
         loadState.value = false
+
     }, {
         loadState.value = false
     })

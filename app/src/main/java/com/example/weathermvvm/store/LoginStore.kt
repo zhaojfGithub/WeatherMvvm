@@ -5,6 +5,7 @@ import com.example.weathermvvm.bean.AllSiteBean
 import com.example.weathermvvm.util.clearSpValue
 import com.example.weathermvvm.util.getSpValue
 import com.example.weathermvvm.util.putSpValue
+import com.example.weathermvvm.util.removeSpValue
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
@@ -23,11 +24,8 @@ object LoginStore {
     }
 
 
-    fun getSiteList(): ArrayList<AllSiteBean>? {
-        val list = getSpValue(siteList, "")
-        if (list.isEmpty()||list=="[]"){
-            return null
-        }
+    fun getSiteList(): ArrayList<AllSiteBean> {
+        val list = getSpValue(siteList, "[]")
         return gson.fromJson(list,object : TypeToken<List<AllSiteBean>>() {}.type)
     }
 
@@ -39,8 +37,7 @@ object LoginStore {
         putSpValue(this.userId,userId)
     }
 
-    fun clearUserInfo() {
-        clearSpValue(userId, MyApplication.context)
-        clearSpValue(siteList, MyApplication.context)
+    fun clearUser() {
+        this.setUserId("")
     }
 }

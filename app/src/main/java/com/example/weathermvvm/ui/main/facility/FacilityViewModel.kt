@@ -57,6 +57,6 @@ class FacilityViewModel : BaseViewModel() {
     fun loginData() {
         if (LoginStore.isLogin() && oneLogin.isEmpty()) {
             loginData.value = true
-        }
+        } else loginData.value = !LoginStore.isLogin() && oneLogin.isNotEmpty()
     }
 }

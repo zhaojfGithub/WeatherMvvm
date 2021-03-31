@@ -3,6 +3,7 @@ package com.example.weathermvvm.ui.main.facility
 
 import android.app.AlertDialog
 import android.content.Intent
+import android.util.Log
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -56,10 +57,6 @@ class FacilityFragment : BaseVmFragment<FacilityViewModel>() {
         mViewModel.getAllFacility()
     }
 
-    override fun initLoginData() {
-        super.initLoginData()
-        mViewModel.loginData()
-    }
 
     override fun observe() {
         super.observe()
@@ -92,5 +89,12 @@ class FacilityFragment : BaseVmFragment<FacilityViewModel>() {
                     dialog2.dismiss()
                 }
         dialog.show()
+    }
+
+    override fun onHiddenChanged(hidden: Boolean) {
+        super.onHiddenChanged(hidden)
+        if (!hidden){
+            mViewModel.getAllFacility()
+        }
     }
 }

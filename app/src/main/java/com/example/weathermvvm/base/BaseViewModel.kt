@@ -6,7 +6,6 @@ import com.example.weathermvvm.common.launch
 
 abstract class BaseViewModel : ViewModel() {
 
-
     val loadState = MutableLiveData<Boolean>()
 
 
