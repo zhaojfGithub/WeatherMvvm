@@ -66,4 +66,10 @@ interface ApiService {
      */
     @POST("weatherUser/updateUser")
     suspend fun updateUser(@Body bean: UserBean): SignBean
+
+    /**
+     * 反馈
+     */
+    @POST("weatherFeedback/addFeedback")
+    suspend fun addFeedback(@Query("userId") userId:Long,@Query("feedback") feedback:String):SignBean
 }

@@ -8,7 +8,7 @@ class MyApplication : Application() {
     companion object {
         lateinit var context: Context
         const val TOKEN = "w7QNti6DIsBxoaze"
-        var isDebugMode: Boolean = true
+        var isDebugMode: Boolean = false
     }
 
     override fun onCreate() {

@@ -45,5 +45,9 @@
     <string name="email">邮箱:</string>
     <string name="password">密码</string>
     <string name="btUpdate">确定修改</string>
+    <string name="btLocationData">点击数据地址</string>
+    <string name="push_inform">发送通知</string>
+    <string name="placeText">请输入内容</string>
+    <string name="submit">提交</string>
 
 </resources>

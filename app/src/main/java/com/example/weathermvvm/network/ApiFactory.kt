@@ -1,6 +1,7 @@
 package com.example.weathermvvm.network
 
 import com.example.weathermvvm.MyApplication
+import com.example.weathermvvm.MyApplication.Companion.context
 import com.example.weathermvvm.common.LogUtils
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -39,6 +40,7 @@ object ApiFactory {
         connectTimeout(30, TimeUnit.SECONDS)// 连接时间：30s超时
         readTimeout(10, TimeUnit.SECONDS)// 读取时间：10s超时
         writeTimeout(10, TimeUnit.SECONDS)// 写入时间：10s超时
+        retryOnConnectionFailure(true)
         if (MyApplication.isDebugMode) addInterceptor(mLoggingInterceptor)// 仅debug模式启用日志过滤器
     }.build()
 

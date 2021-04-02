@@ -17,6 +17,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
     }
 
     buildTypes {
@@ -63,4 +67,6 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:2.3.3"
 
     implementation 'com.jeremyliao:live-event-bus-x:1.7.3'
+
+    implementation 'com.amap.api:location:latest.integration'
 }

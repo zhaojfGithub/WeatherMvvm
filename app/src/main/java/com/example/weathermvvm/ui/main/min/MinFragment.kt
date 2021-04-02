@@ -3,16 +3,15 @@ package com.example.weathermvvm.ui.main.min
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.Intent
+import android.net.Uri
 import android.view.View
 import androidx.lifecycle.Observer
 import com.example.weathermvvm.R
-import com.example.weathermvvm.base.BaseActivity
 import com.example.weathermvvm.base.BaseVmFragment
 import com.example.weathermvvm.common.LiveBus
 import com.example.weathermvvm.common.USER_LOGIN
 import com.example.weathermvvm.common.USER_UPDATE
 import com.example.weathermvvm.ui.login.login.LoginActivity
-import com.example.weathermvvm.ui.main.home.HomeFragment
 import com.example.weathermvvm.ui.main.min.opinion.OpinionFeedbackActivity
 import com.example.weathermvvm.ui.main.min.push.PushRegulateActivity
 import com.example.weathermvvm.ui.main.min.user.UserActivity
@@ -32,15 +31,27 @@ class MinFragment : BaseVmFragment<MinViewModel>() {
 
     override fun initView() {
         super.initView()
-        rlTop.setOnClickListener { btOnclick(UserActivity::class.java) }
+        rlTop.setOnClickListener { btOnclick(UserActivity::class.java, false) }
         tvFacilityCollect.setOnClickListener { }
-        tvSiteRegulate.setOnClickListener { btOnclick(SiteListActivity::class.java) }
-        tvPushRegulate.setOnClickListener { btOnclick(PushRegulateActivity::class.java) }
-        tvOpinionFeedback.setOnClickListener { btOnclick(OpinionFeedbackActivity::class.java) }
+        tvSiteRegulate.setOnClickListener { btOnclick(SiteListActivity::class.java, false) }
+        tvPushRegulate.setOnClickListener { btOnclick(PushRegulateActivity::class.java, true) }
+        tvOpinionFeedback.setOnClickListener {
+            btOnclick(
+                OpinionFeedbackActivity::class.java,
+                false
+            )
+        }
         btBackLogin.setOnClickListener {
             mViewModel.backLogin()
         }
-        btLogin.setOnClickListener { btOnclick(LoginActivity::class.java) }
+        btLogin.setOnClickListener { btOnclick(LoginActivity::class.java, true) }
+        tvAboutMe.setOnClickListener {
+            val uri = Uri.parse("https://github.com/zhaojfGithub")
+            val intent = Intent()
+            intent.action = Intent.ACTION_VIEW
+            intent.data = uri
+            this.startActivity(intent)
+        }
     }
 
     override fun lazyLoadData() {
@@ -84,16 +95,16 @@ class MinFragment : BaseVmFragment<MinViewModel>() {
                 mViewModel.Login()
             }
         }
-        LiveBus.observe<Boolean>(USER_UPDATE,this){
-            if (it){
+        LiveBus.observe<Boolean>(USER_UPDATE, this) {
+            if (it) {
                 mViewModel.getUser()
                 mViewModel.Login()
             }
         }
     }
 
-    private fun btOnclick(java: Class<out Activity>) {
-        if (mViewModel.isLogin) {
+    private fun btOnclick(java: Class<out Activity>, boole: Boolean) {
+        if (mViewModel.isLogin || boole) {
             startActivity(Intent(this.activity, java))
         } else {
             loginDialog()
@@ -102,15 +113,15 @@ class MinFragment : BaseVmFragment<MinViewModel>() {
 
     private fun loginDialog() {
         val dialog: AlertDialog.Builder = AlertDialog.Builder(activity)
-                .setTitle("登录")
-                .setMessage("请先进行登录！！！")
-                .setPositiveButton("取消") { dialog1, _ ->
-                    dialog1.dismiss()
-                }
-                .setPositiveButton("确定") { dialog2, _ ->
-                    startActivity(Intent(activity, LoginActivity::class.java))
-                    dialog2.dismiss()
-                }
+            .setTitle("登录")
+            .setMessage("请先进行登录！！！")
+            .setPositiveButton("取消") { dialog1, _ ->
+                dialog1.dismiss()
+            }
+            .setPositiveButton("确定") { dialog2, _ ->
+                startActivity(Intent(activity, LoginActivity::class.java))
+                dialog2.dismiss()
+            }
         dialog.show()
     }
 }
