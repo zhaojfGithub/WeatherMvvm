@@ -33,7 +33,7 @@ class MinFragment : BaseVmFragment<MinViewModel>() {
         super.initView()
         rlTop.setOnClickListener { btOnclick(UserActivity::class.java, false) }
         tvFacilityCollect.setOnClickListener { }
-        tvSiteRegulate.setOnClickListener { btOnclick(SiteListActivity::class.java, false) }
+        tvSiteRegulate.setOnClickListener { btOnclick(SiteListActivity::class.java, true) }
         tvPushRegulate.setOnClickListener { btOnclick(PushRegulateActivity::class.java, true) }
         tvOpinionFeedback.setOnClickListener {
             btOnclick(

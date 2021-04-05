@@ -39,10 +39,8 @@ class SiteListViewModel : BaseViewModel() {
         } else {
             arrayList.clear()
             arrayList = LoginStore.getSiteList()
-            if (arrayList.size == 0) {
-                val bean = AllSiteBean(null, null, null, null, lat, lng, site, null)
-                arrayList.add(bean)
-            }
+            val bean = AllSiteBean(null, null, null, null, lat, lng, site, null)
+            arrayList.add(bean)
             LoginStore.setSiteList(arrayList)
             val signBean = SignBean(200, "添加成功")
             setList.value = signBean

@@ -66,6 +66,9 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:2.3.3"
     implementation "androidx.navigation:navigation-ui-ktx:2.3.3"
 
+    //刷新
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
     implementation 'com.jeremyliao:live-event-bus-x:1.7.3'
 
     implementation 'com.amap.api:location:latest.integration'

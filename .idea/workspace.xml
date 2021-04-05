@@ -36,22 +36,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b538b14-ffd8-468f-b189-dc74d67da046" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_opinion.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_push_regulate.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/WeatherMvvm.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/WeatherMvvm.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/MyApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/MyApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/network/ApiFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/network/ApiFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/network/ApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/network/ApiService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/home/weather/WeatherFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/home/weather/WeatherFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/home/weather/WeatherViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/home/weather/WeatherViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/min/MinFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/min/MinFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/min/opinion/OpinionFeedbackActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/min/opinion/OpinionFeedbackActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/min/opinion/OpinionFeedbackViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/min/opinion/OpinionFeedbackViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/min/push/PushRegulateActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/min/push/PushRegulateActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/min/push/PushRegulateViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/main/min/push/PushRegulateViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/site/SiteListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/site/SiteListViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_weather.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_weather.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +125,7 @@
     <property name="android-custom-viewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/com.google.android.material/material/1.1.0/7ba5bcd622e3d6d7ab6b9833717c4385e4ba0a51/material-1.1.0-sources.jar!/com/google/android/material/bottomnavigation/BottomNavigationView.java_SELECTED" value="BottomNavigationView" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../Android_Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Android_demo.keystore" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wanandroid-master" />
     <property name="multi-representation-previewD:/Android_Sdk/sources/android-30/android/view/View.java_selected" value="Custom views" />
     <property name="multi-representation-previewD:/Android_Sdk/sources/android-30/android/widget/TextView.java_selected" value="Custom views" />
     <property name="multi-representation-previewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.2.0/13e8ff89631c2e101eb6bddd12c2fb4bbd74b15d/appcompat-1.2.0-sources.jar!/androidx/appcompat/widget/AppCompatEditText.java_selected" value="Custom views" />
@@ -142,6 +136,9 @@
     <property name="multi-representation-previewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_selected" value="Custom views" />
     <property name="multi-representation-previewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/androidx.viewpager2/viewpager2/1.0.0/3c3569044e6969f1ee5c3aa03b08e6717a2d782f/viewpager2-1.0.0-sources.jar!/androidx/viewpager2/widget/ViewPager2.java_selected" value="Custom views" />
     <property name="multi-representation-previewD:/android_demo/KnowWeather-master/.gradle/4.1/caches/modules-2/files-2.1/com.google.android.material/material/1.1.0/7ba5bcd622e3d6d7ab6b9833717c4385e4ba0a51/material-1.1.0-sources.jar!/com/google/android/material/bottomnavigation/BottomNavigationView.java_selected" value="Custom views" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
@@ -364,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617198698772</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="初版完成">
+      <created>1617359267891</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1617359267891</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -404,13 +408,18 @@
     <MESSAGE value="登录，注册完成" />
     <MESSAGE value="修改ViewPage2的数据全部更换的刷新问题" />
     <MESSAGE value="编辑个人信息完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="编辑个人信息完成" />
+    <MESSAGE value="初版完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="初版完成" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="913" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1617334961883">
+    <state x="286" y="158" key="#PSD" timestamp="1617618586147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="913" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1617334961883" />
+    <state x="286" y="158" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1617618586147" />
+    <state x="913" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1617619256594">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="913" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1617619256594" />
     <state x="305" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1617353560173">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -443,46 +452,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="157" key="AndroidProcessChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1617091784889" />
-    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1617198697695">
+    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1617359266221">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1617198697695" />
-    <state x="642" y="107" key="FileChooserDialogImpl" timestamp="1617358149784">
+    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1617359266221" />
+    <state x="642" y="107" key="FileChooserDialogImpl" timestamp="1617619380768">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="642" y="107" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617358149784" />
-    <state width="1492" height="377" key="GridCell.Tab.0.bottom" timestamp="1617357307796">
+    <state x="642" y="107" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617619380768" />
+    <state width="1492" height="224" key="GridCell.Tab.0.bottom" timestamp="1617617735970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="377" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617357307796" />
-    <state width="1492" height="377" key="GridCell.Tab.0.center" timestamp="1617357307796">
+    <state width="1492" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617617735970" />
+    <state width="1492" height="224" key="GridCell.Tab.0.center" timestamp="1617617735970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="377" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617357307796" />
-    <state width="1492" height="377" key="GridCell.Tab.0.left" timestamp="1617357307795">
+    <state width="1492" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617617735970" />
+    <state width="1492" height="224" key="GridCell.Tab.0.left" timestamp="1617617735970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="377" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617357307795" />
-    <state width="1492" height="377" key="GridCell.Tab.0.right" timestamp="1617357307796">
+    <state width="1492" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617617735970" />
+    <state width="1492" height="224" key="GridCell.Tab.0.right" timestamp="1617617735970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="377" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617357307796" />
-    <state width="1493" height="224" key="GridCell.Tab.1.bottom" timestamp="1617113229317">
+    <state width="1492" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617617735970" />
+    <state width="1492" height="224" key="GridCell.Tab.1.bottom" timestamp="1617617735971">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617113229317" />
-    <state width="1493" height="224" key="GridCell.Tab.1.center" timestamp="1617113229316">
+    <state width="1492" height="224" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617617735971" />
+    <state width="1492" height="224" key="GridCell.Tab.1.center" timestamp="1617617735970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1617113229316" />
-    <state width="1493" height="224" key="GridCell.Tab.1.left" timestamp="1617113229316">
+    <state width="1492" height="224" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1617617735970" />
+    <state width="1492" height="224" key="GridCell.Tab.1.left" timestamp="1617617735970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1617113229316" />
-    <state width="1493" height="224" key="GridCell.Tab.1.right" timestamp="1617113229317">
+    <state width="1492" height="224" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1617617735970" />
+    <state width="1492" height="224" key="GridCell.Tab.1.right" timestamp="1617617735970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1617113229317" />
+    <state width="1492" height="224" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1617617735970" />
     <state x="349" y="155" key="IDE.errors.dialog" timestamp="1617246337158">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -523,5 +532,16 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="807" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1617155116778" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/weathermvvm/ui/site/SiteListViewModel.kt</url>
+          <line>43</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
