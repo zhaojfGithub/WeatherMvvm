@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/35bd9004d406cb85bce05c482fe62d30/jetified-viewpager2-1.0.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/3aecb26928305d514c4e55f4e89fd809/jetified-viewpager2-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/35bd9004d406cb85bce05c482fe62d30/jetified-viewpager2-1.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/35bd9004d406cb85bce05c482fe62d30/jetified-viewpager2-1.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/35bd9004d406cb85bce05c482fe62d30/jetified-viewpager2-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/3aecb26928305d514c4e55f4e89fd809/jetified-viewpager2-1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/3aecb26928305d514c4e55f4e89fd809/jetified-viewpager2-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/3aecb26928305d514c4e55f4e89fd809/jetified-viewpager2-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.savedstate:savedstate:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/a44fab6b14e0babcca559983b73fedbf/jetified-savedstate-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/a44fab6b14e0babcca559983b73fedbf/jetified-savedstate-1.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/a44fab6b14e0babcca559983b73fedbf/jetified-savedstate-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/ff853c717b56f50c3c3b80226e93f6c8/jetified-savedstate-1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/ff853c717b56f50c3c3b80226e93f6c8/jetified-savedstate-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/ff853c717b56f50c3c3b80226e93f6c8/jetified-savedstate-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

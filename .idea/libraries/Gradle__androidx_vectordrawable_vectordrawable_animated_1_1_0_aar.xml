@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.1.0@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/4d69d9d3d9190c1cf3f429008e95b1c0/vectordrawable-animated-1.1.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/4d69d9d3d9190c1cf3f429008e95b1c0/vectordrawable-animated-1.1.0/res" />
-      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/4d69d9d3d9190c1cf3f429008e95b1c0/vectordrawable-animated-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/c822bca5c6df22a6fb791ddf15a53b8d/vectordrawable-animated-1.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/c822bca5c6df22a6fb791ddf15a53b8d/vectordrawable-animated-1.1.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/c822bca5c6df22a6fb791ddf15a53b8d/vectordrawable-animated-1.1.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

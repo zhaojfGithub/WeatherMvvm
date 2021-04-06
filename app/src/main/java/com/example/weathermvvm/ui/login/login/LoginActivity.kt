@@ -14,11 +14,16 @@ import com.example.weathermvvm.common.USER_LOGIN
 import com.example.weathermvvm.ui.login.register.RegisteredActivity
 import com.example.weathermvvm.ui.main.MainActivity
 import com.jeremyliao.liveeventbus.LiveEventBus
+import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.scopes.ActivityScoped
+import dagger.hilt.android.scopes.FragmentScoped
 import kotlinx.android.synthetic.main.activity_register.*
 
 /**
  * 登录
  */
+
+@AndroidEntryPoint
 class LoginActivity  : BaseVmActivity<LoginViewModel>() {
 
     override fun viewModelClass() = LoginViewModel::class.java
@@ -47,7 +52,7 @@ class LoginActivity  : BaseVmActivity<LoginViewModel>() {
         bt_registered.setOnClickListener {
             if (tv_account.text.toString().length==11){
                 if (tv_password.text.toString().isNotEmpty()){
-                    mViewModel.Login(tv_account.text.toString(),tv_password.text.toString())
+                    mViewModel.setLogin(tv_account.text.toString(),tv_password.text.toString())
                 }else{
                     ToastUtil.showShort("请输入密码")
                 }

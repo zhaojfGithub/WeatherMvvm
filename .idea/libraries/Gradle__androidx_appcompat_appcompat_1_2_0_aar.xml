@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.appcompat:appcompat:1.2.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/147a6e7f9f7fc8aa5d9c7d6dea93c4ed/appcompat-1.2.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/f78d6f14fa274d78c48a393da45e3ae7/appcompat-1.2.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/147a6e7f9f7fc8aa5d9c7d6dea93c4ed/appcompat-1.2.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/147a6e7f9f7fc8aa5d9c7d6dea93c4ed/appcompat-1.2.0/res" />
-      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/147a6e7f9f7fc8aa5d9c7d6dea93c4ed/appcompat-1.2.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/f78d6f14fa274d78c48a393da45e3ae7/appcompat-1.2.0/res" />
+      <root url="jar://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/f78d6f14fa274d78c48a393da45e3ae7/appcompat-1.2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../KnowWeather-master/.gradle/4.1/caches/transforms-2/files-2.1/f78d6f14fa274d78c48a393da45e3ae7/appcompat-1.2.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
