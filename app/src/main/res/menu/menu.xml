@@ -7,10 +7,10 @@
         android:icon="@drawable/ic_home"/>
     <item
         android:id="@+id/menu_facility"
-        android:title="首页"
+        android:title="设备"
         android:icon="@drawable/ic_facility"/>
     <item
         android:id="@+id/menu_mine"
-        android:title="首页"
+        android:title="我的"
         android:icon="@drawable/ic_mine"/>
 </menu>

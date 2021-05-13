@@ -34,7 +34,7 @@ class FacilityFragment : BaseVmFragment<FacilityViewModel>() {
     override fun initView() {
         super.initView()
         toolbar.apply {
-            title = "城市列表"
+            title = "设备管理"
             setTitleTextColor(ContextCompat.getColor(requireActivity(), R.color.white))
             setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.blue))
             inflateMenu(R.menu.ficality_menu)
@@ -46,8 +46,11 @@ class FacilityFragment : BaseVmFragment<FacilityViewModel>() {
         rv_facility.layoutManager = LinearLayoutManager(activity)
         rv_facility.adapter = adapter
         adapter.setOnItemClickListener(object : FacilityAdapter.OnItemClickListener {
-            override fun onClick(position: Int) {
-                mViewModel.setUserFacility(position);
+            override fun onClick(position: Int,type: Int) {
+                if (type == 1)
+                mViewModel.setUserFacility(position)
+                else
+                    siteTextDialog(position)
             }
         })
     }
@@ -86,6 +89,16 @@ class FacilityFragment : BaseVmFragment<FacilityViewModel>() {
                 }
                 .setPositiveButton("确定") { dialog2, _ ->
                     startActivity(Intent(activity, LoginActivity::class.java))
+                    dialog2.dismiss()
+                }
+        dialog.show()
+    }
+
+    private fun siteTextDialog(position: Int) {
+        val dialog: AlertDialog.Builder = AlertDialog.Builder(activity)
+                .setTitle("信息")
+                .setMessage(mViewModel.list.value?.get(position)?.text)
+                .setPositiveButton("确定") { dialog2, _ ->
                     dialog2.dismiss()
                 }
         dialog.show()

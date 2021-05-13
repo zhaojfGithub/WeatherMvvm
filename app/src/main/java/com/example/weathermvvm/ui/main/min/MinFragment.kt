@@ -12,6 +12,7 @@ import com.example.weathermvvm.common.LiveBus
 import com.example.weathermvvm.common.USER_LOGIN
 import com.example.weathermvvm.common.USER_UPDATE
 import com.example.weathermvvm.ui.login.login.LoginActivity
+import com.example.weathermvvm.ui.main.min.collect.FacilityCollectActivity
 import com.example.weathermvvm.ui.main.min.opinion.OpinionFeedbackActivity
 import com.example.weathermvvm.ui.main.min.push.PushRegulateActivity
 import com.example.weathermvvm.ui.main.min.user.UserActivity
@@ -32,7 +33,7 @@ class MinFragment : BaseVmFragment<MinViewModel>() {
     override fun initView() {
         super.initView()
         rlTop.setOnClickListener { btOnclick(UserActivity::class.java, false) }
-        tvFacilityCollect.setOnClickListener { }
+        tvFacilityCollect.setOnClickListener { btOnclick(FacilityCollectActivity::class.java,false) }
         tvSiteRegulate.setOnClickListener { btOnclick(SiteListActivity::class.java, true) }
         tvPushRegulate.setOnClickListener { btOnclick(PushRegulateActivity::class.java, true) }
         tvOpinionFeedback.setOnClickListener {

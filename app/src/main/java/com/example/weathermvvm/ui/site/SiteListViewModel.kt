@@ -54,7 +54,7 @@ class SiteListViewModel : BaseViewModel() {
         loadState.value = true
         if (id == null) {
             arrayList.clear()
-            arrayList = LoginStore.getSiteList()!!
+            arrayList = LoginStore.getSiteList()
             arrayList.removeAt(positon)
             LoginStore.setSiteList(arrayList)
             val signBean = SignBean(200, "删除成功")

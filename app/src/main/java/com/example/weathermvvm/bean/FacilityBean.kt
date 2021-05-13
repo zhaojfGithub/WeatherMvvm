@@ -6,5 +6,6 @@ data class FacilityBean(
         val facilityUuid: String,
         val gmtCreate: String,
         val gmtModified: String,
-        var collect: Int?
+        var collect: Int?,
+        val text:String
 )

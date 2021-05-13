@@ -1,19 +1,16 @@
-package com.example.weathermvvm.ui.main.facility
+package com.example.weathermvvm.ui.main.min.collect
 
-import android.app.AlertDialog
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.weathermvvm.R
 import com.example.weathermvvm.bean.FacilityBean
-import com.example.weathermvvm.ui.login.login.LoginActivity
+import com.example.weathermvvm.ui.main.facility.FacilityAdapter
 
-class FacilityAdapter : RecyclerView.Adapter<FacilityAdapter.ViewHolder>() {
+class FacilityCollectAdapter : RecyclerView.Adapter<FacilityCollectAdapter.ViewHolder>(){
 
     private lateinit var list: ArrayList<FacilityBean>
 
@@ -34,7 +31,7 @@ class FacilityAdapter : RecyclerView.Adapter<FacilityAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_facility, parent, false)
-        return ViewHolder(view)
+        return FacilityCollectAdapter.ViewHolder(view)
     }
 
     override fun getItemCount(): Int {
@@ -62,14 +59,5 @@ class FacilityAdapter : RecyclerView.Adapter<FacilityAdapter.ViewHolder>() {
         this.list.clear()
         this.list.addAll(list)
         notifyDataSetChanged()
-    }
-
-    fun amendPosition(position: Int) {
-        if (list[position].collect == null || list[position].collect == 0) {
-            list[position].collect = 1
-        } else {
-            list[position].collect = 0
-        }
-        notifyItemChanged(position)
     }
 }

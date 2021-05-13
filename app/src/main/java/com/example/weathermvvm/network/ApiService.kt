@@ -72,4 +72,10 @@ interface ApiService {
      */
     @POST("weatherFeedback/addFeedback")
     suspend fun addFeedback(@Query("userId") userId:Long,@Query("feedback") feedback:String):SignBean
+
+    /**
+     * 查询已经收藏得设备
+     */
+    @GET("weatherFacility/getUserFacility")
+    suspend fun getUserFacility(@Query("id") userId:Long):ApiResult<List<FacilityBean>>
 }
